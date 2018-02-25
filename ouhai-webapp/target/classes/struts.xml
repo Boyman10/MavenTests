@@ -11,6 +11,14 @@
         <action name="index">
             <result>/index.jsp</result>
         </action>
+        
+        <action name="hello" class="org.ouhai.demo.business.action.HelloWorldAction" method="execute">
+            <result name="success">/HelloWorld.jsp</result>
+        </action>  
+        
+        <action name="register" class="org.ouhai.demo.business.action.Register" method="execute">
+            <result name="success">/thankyou.jsp</result>
+        </action> 
     </package>
 
 </struts>
